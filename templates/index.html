@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load static %}
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v5.9.4, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.9.4, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo5.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>IqroPlus</title>
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.min.css'%}">
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.min.css'%}">
+  <link rel="stylesheet" href="{% static 'assets/theme/css/style.css'%}">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="form4 cid-u8XherBnuy mbr-fullscreen" id="form4-0">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row content-wrapper justify-content-center">
+            <div class="col-lg-4 offset-lg-1 mbr-form">
+                <form action="{% url 'bot' %}" method="POST" >
+                    {% csrf_token %}
+                    <div class="row">
+                        
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <h1 class="mbr-section-title mb-4 display-2">
+                                <strong>Biz bilan bog'lanish</strong>
+                            </h1>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <p class="mbr-text mbr-fonts-style mb-4 display-7">
+                                Ushbu shaklni to‘ldiring, biz sizga tez orada javob beramiz.</p>
+                        </div>
+                        <div class="col-lg-12 col-md col-12 form-group mb-3" data-for="name">
+                            <input type="text" name="name" placeholder="Ismingiz" data-form-field="name" class="form-control" value="" id="name-form4-0" required>
+                        </div>
+                        <div class="col-lg-12 col-md col-12 form-group mb-3" data-for="tel">
+                            <input type="tel" name="email" placeholder="Raqamingiz" data-form-field="email" class="form-control" value="" id="email-form4-0" required>
+                        </div>
+                        <div class="col-lg-12 col-md col-12 form-group mb-3" data-for="tel">
+                            <select class="form-select form-control" aria-label="Default select example" name="type" required>
+                                <option selected disabled>Kursni Tanlang</option>
+                                <option value="1">Foundation</option>
+                                <option value="2">Frontend</option>
+                                <option value="3">Backend</option>
+                              </select>
+                        </div>
+                        
+                        <div class="col-12 col-md-auto mbr-section-btn">
+                            <button type="submit" class="btn btn-secondary display-4">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div  class="col-lg-5 offset-lg-1 col-12">
+                <div class="image-wrapper">
+                    <img class="w-100"  src="{% static '/assets/img/pexels-lisa-fotios-16129705.jpg' %}" alt="error">
+                </div>
+            </div>
+        </div>
+    </div>
+</section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+</body>
+</html>
